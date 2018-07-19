@@ -1,1 +1,3 @@
-# haskell tasks based on Erik Majir Haskell course
+# haskell tasks 
+
+based on Erik Majir Haskell course
