@@ -37,3 +37,10 @@ safetail
 
 funct :: Int -> [a] -> [a]
 funct x xs = take (x+1) xs ++ drop x xs
+
+factors  :: Int -> [Int]
+factors n =
+    [x | x <- [1 .. n], n `mod` x ==0 ]
+
+prime :: Int -> Bool
+prime n = factors n == [1,n]
