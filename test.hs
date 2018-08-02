@@ -50,3 +50,8 @@ primes n = [x|x <-[2..n],prime x]
 
 pairs :: [a] -> [(a,a)]
 pairs xs = zip xs (tail xs)
+
+positions :: Eq a => a -> [a] -> [Int]
+positions x xs = 
+    [i | (x',i) <- zip xs [0..n],x==x']
+    where n = length xs -1
